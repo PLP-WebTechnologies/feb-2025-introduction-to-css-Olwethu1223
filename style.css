@@ -1,0 +1,133 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ff6347, #800080); /* Vibrant gradient */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    font-family: 'Comic Sans MS', sans-serif; /* Playful anime style font */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold on hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    background: #000;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Content Section */
+.style-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.outfit {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.outfit:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.outfit h3 {
+    font-size: 1.8rem;
+    color: #ff6347; /* Jujutsu Kaisen inspired vibrant orange */
+    margin-bottom: 10px;
+}
+
+.outfit img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #ff6347; /* Accent border color */
+    margin-bottom: 10px;
+}
+
+.outfit p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .style-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .outfit {
+        width: 80%;
+    }
+}
